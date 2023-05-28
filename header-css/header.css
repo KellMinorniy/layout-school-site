@@ -1,0 +1,134 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+
+  border-bottom:10px solid rgb(129, 117, 94);
+  background: linear-gradient(176.74deg, #A79B85 2.69%, #C2B59A 87.87%, #817766 125.7%);
+  padding: 18px 48px;
+}
+
+.header-school{
+  margin: 0 40px 0 0;
+  cursor: pointer;
+
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.header-visual-container {
+  flex-wrap: nowrap;
+  flex-basis: 310px;
+  min-width: 200px;
+  display: flex;
+  position: relative;
+}
+
+
+.header-visual {
+  cursor: pointer;
+  position: absolute;
+  top: -17px;
+  font-size: 15px;
+  line-height: 18px;
+  background: #FFF8EB;
+  padding: 7px 40px;
+  font-size: 18px;
+  border-radius: 0 0 20px 20px;
+  transition: 0.15s;
+
+  color: rgba(45, 34, 26, 0.44);
+}
+
+.header-visual:hover {
+  color: rgba(45, 34, 26, 0.755);
+}
+
+
+.header-search {
+  display: flex;
+  align-items: center;
+  margin: 0 0 0 50px;
+}
+.header-input {
+  position: relative;
+  border-radius: 5px 0 0 5px;
+  padding: 3px 0 3px 13px;
+  background: white;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+  
+}
+
+.header-input-btn {
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  left: -5px;
+  align-items: center;
+  background: white;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  padding:3px 7px 3px 0;
+  transition: 0.15s;
+}
+
+.header-inner {
+  cursor: pointer;
+  align-items: center;
+  text-align: center;
+  white-space: nowrap;
+  display: flex;
+
+  margin-left: 37pxВ;
+  font-size: 15px;
+  line-height: 18px;
+  color: #60594D;
+}
+
+.header-inner-achiv {
+  margin-left: 37px;
+}
+
+.header-inner-menu {
+  margin: 0 15px;
+  padding: 0 18px;
+  border-left: 1.5px solid #60594C;
+  border-right: 1.5px solid #60594C;
+}
+
+.header-inner-icon {
+  margin-right: 10.5px;
+  transition: 0.15s;
+}
+.header-inner-icon:hover {
+  rotate: 15deg;
+}
+
+
+@font-face {
+  font-family: Gilroy-medium;
+  src: url(../fonts/Gilroy-Medium.ttf);
+
+  font-family: Gilroy-light;
+  src: url(../fonts/Gilroy-Light.ttf);
+}
+
+@media (max-width:1140px) {
+  .header {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .header-inner {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width:800px) {
+  .header {
+    flex-direction: column;
+  }
+}
+
+
